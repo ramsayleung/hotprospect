@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		579A87A72BAF6D88007CFB79 /* ProspectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579A87A62BAF6D88007CFB79 /* ProspectView.swift */; };
+		579A87A92BAF6ECA007CFB79 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579A87A82BAF6ECA007CFB79 /* MeView.swift */; };
+		579A87AB2BAF721C007CFB79 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579A87AA2BAF721C007CFB79 /* Prospect.swift */; };
 		579E155E2BABD8AF00B70176 /* HotProspectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579E155D2BABD8AF00B70176 /* HotProspectApp.swift */; };
 		579E15602BABD8AF00B70176 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579E155F2BABD8AF00B70176 /* ContentView.swift */; };
 		579E15622BABD8BC00B70176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 579E15612BABD8BC00B70176 /* Assets.xcassets */; };
@@ -14,6 +17,8 @@
 		579E15702BABD8BC00B70176 /* HotProspectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579E156F2BABD8BC00B70176 /* HotProspectTests.swift */; };
 		579E157A2BABD8BC00B70176 /* HotProspectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579E15792BABD8BC00B70176 /* HotProspectUITests.swift */; };
 		579E157C2BABD8BC00B70176 /* HotProspectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579E157B2BABD8BC00B70176 /* HotProspectUITestsLaunchTests.swift */; };
+		579E15892BABEB0C00B70176 /* SwiftUITabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579E15882BABEB0C00B70176 /* SwiftUITabView.swift */; };
+		579E158B2BAD424200B70176 /* ContextMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579E158A2BAD424200B70176 /* ContextMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		579A87A62BAF6D88007CFB79 /* ProspectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectView.swift; sourceTree = "<group>"; };
+		579A87A82BAF6ECA007CFB79 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		579A87AA2BAF721C007CFB79 /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
 		579E155A2BABD8AF00B70176 /* HotProspect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotProspect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		579E155D2BABD8AF00B70176 /* HotProspectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotProspectApp.swift; sourceTree = "<group>"; };
 		579E155F2BABD8AF00B70176 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +53,8 @@
 		579E15752BABD8BC00B70176 /* HotProspectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotProspectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		579E15792BABD8BC00B70176 /* HotProspectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotProspectUITests.swift; sourceTree = "<group>"; };
 		579E157B2BABD8BC00B70176 /* HotProspectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotProspectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		579E15882BABEB0C00B70176 /* SwiftUITabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITabView.swift; sourceTree = "<group>"; };
+		579E158A2BAD424200B70176 /* ContextMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,11 @@
 			children = (
 				579E155D2BABD8AF00B70176 /* HotProspectApp.swift */,
 				579E155F2BABD8AF00B70176 /* ContentView.swift */,
+				579A87AA2BAF721C007CFB79 /* Prospect.swift */,
+				579E15882BABEB0C00B70176 /* SwiftUITabView.swift */,
+				579E158A2BAD424200B70176 /* ContextMenuView.swift */,
+				579A87A82BAF6ECA007CFB79 /* MeView.swift */,
+				579A87A62BAF6D88007CFB79 /* ProspectView.swift */,
 				579E15612BABD8BC00B70176 /* Assets.xcassets */,
 				579E15632BABD8BC00B70176 /* HotProspect.entitlements */,
 				579E15642BABD8BC00B70176 /* Preview Content */,
@@ -259,8 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579A87A92BAF6ECA007CFB79 /* MeView.swift in Sources */,
 				579E15602BABD8AF00B70176 /* ContentView.swift in Sources */,
+				579E158B2BAD424200B70176 /* ContextMenuView.swift in Sources */,
+				579A87AB2BAF721C007CFB79 /* Prospect.swift in Sources */,
+				579E15892BABEB0C00B70176 /* SwiftUITabView.swift in Sources */,
 				579E155E2BABD8AF00B70176 /* HotProspectApp.swift in Sources */,
+				579A87A72BAF6D88007CFB79 /* ProspectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
