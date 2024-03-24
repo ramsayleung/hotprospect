@@ -10,6 +10,7 @@
 		579A87A72BAF6D88007CFB79 /* ProspectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579A87A62BAF6D88007CFB79 /* ProspectView.swift */; };
 		579A87A92BAF6ECA007CFB79 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579A87A82BAF6ECA007CFB79 /* MeView.swift */; };
 		579A87AB2BAF721C007CFB79 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579A87AA2BAF721C007CFB79 /* Prospect.swift */; };
+		579A87AE2BB08C69007CFB79 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 579A87AD2BB08C69007CFB79 /* CodeScanner */; };
 		579E155E2BABD8AF00B70176 /* HotProspectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579E155D2BABD8AF00B70176 /* HotProspectApp.swift */; };
 		579E15602BABD8AF00B70176 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579E155F2BABD8AF00B70176 /* ContentView.swift */; };
 		579E15622BABD8BC00B70176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 579E15612BABD8BC00B70176 /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579A87AE2BB08C69007CFB79 /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +162,9 @@
 			dependencies = (
 			);
 			name = HotProspect;
+			packageProductDependencies = (
+				579A87AD2BB08C69007CFB79 /* CodeScanner */,
+			);
 			productName = HotProspect;
 			productReference = 579E155A2BABD8AF00B70176 /* HotProspect.app */;
 			productType = "com.apple.product-type.application";
@@ -232,6 +237,9 @@
 				Base,
 			);
 			mainGroup = 579E15512BABD8AF00B70176;
+			packageReferences = (
+				579A87AC2BB08C69007CFB79 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = 579E155B2BABD8AF00B70176 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -444,6 +452,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR code";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -454,7 +463,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
@@ -482,6 +491,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR code";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -492,7 +502,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
@@ -637,6 +647,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		579A87AC2BB08C69007CFB79 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		579A87AD2BB08C69007CFB79 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 579A87AC2BB08C69007CFB79 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 579E15522BABD8AF00B70176 /* Project object */;
 }
