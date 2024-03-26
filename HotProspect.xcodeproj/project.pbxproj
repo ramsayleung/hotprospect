@@ -90,6 +90,7 @@
 		579E15512BABD8AF00B70176 = {
 			isa = PBXGroup;
 			children = (
+				57DEA7692BB28C3D002E8678 /* README.md */,
 				579E155C2BABD8AF00B70176 /* HotProspect */,
 				579E156E2BABD8BC00B70176 /* HotProspectTests */,
 				579E15782BABD8BC00B70176 /* HotProspectUITests */,
@@ -111,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				579E155D2BABD8AF00B70176 /* HotProspectApp.swift */,
-				57DEA7692BB28C3D002E8678 /* README.md */,
 				579E155F2BABD8AF00B70176 /* ContentView.swift */,
 				57DEA7652BB26682002E8678 /* EditProspectView.swift */,
 				579A87AA2BAF721C007CFB79 /* Prospect.swift */,
